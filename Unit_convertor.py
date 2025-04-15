@@ -1,3 +1,4 @@
+# https://unitconvertorpython.streamlit.app/
 import streamlit as st
 
 
@@ -249,8 +250,8 @@ with col2:
                 formula = f"{input_value} x {time_calculation["millisecondToSecond"]}"
 
         formula_text = f"**Formula : ** Convert {from_unit} → to → {to_unit} using this formula {formula}."
-    
-    st.number_input(" ", value=result, disabled=True, label_visibility="collapsed", key="result_output")
+    result1 = str(result)
+    st.text_input(" ", value = result1, disabled=True, label_visibility="collapsed", key="result_output")
 
 
 st.divider()
